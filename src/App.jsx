@@ -1,6 +1,11 @@
 import { useState } from "react";
+import Hero from "./sections/Hero";
 function App() {
-  return <div>Welcome to 3d portfolio project</div>;
+  return (
+    <>  
+      <Hero />
+    </>
+  );
 }
 
 export default App;
