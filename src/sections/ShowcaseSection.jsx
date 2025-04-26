@@ -64,7 +64,7 @@ const ShowcaseSection = () => {
                 user-friendly experience.
               </p>
             </div>
-          </div>
+          </div>  
 
           {/* RIGHT */}
           <div
