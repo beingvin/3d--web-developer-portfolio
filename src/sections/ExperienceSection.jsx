@@ -10,20 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
   useGSAP(() => {
-    gsap.utils.toArray(".timeline-card").forEach((card) => {
-      gsap.from(card, {
-        xPercent: -100,
-        opacity: 0,
-        transformOrigin: "left left",
-        duration: 1,
-        ease: "power2.inOut",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 80%",
-        },
-      });
-    });
-
     gsap.to(".timeline", {
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
@@ -35,6 +21,19 @@ const ExperienceSection = () => {
           gsap.to(".timeline", { scaleY: 1 - self.progress });
         },
       },
+    });
+
+    gsap.utils.toArray(".expText").forEach((text) => {
+      gsap.from(text, {
+        xPercent: -0,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: text,
+          start: "top 60%",
+        },
+      });
     });
   }, []);
   return (
