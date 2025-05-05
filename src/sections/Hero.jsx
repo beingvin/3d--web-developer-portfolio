@@ -57,7 +57,7 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p>
-              Hi, I'm franky, a developer based in croatia with a passion for
+              Hi, I'm alex, a developer based in croatia with a passion for
               code.
             </p>
             <Button
